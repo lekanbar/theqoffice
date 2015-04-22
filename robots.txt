@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /CustomControls/
+Disallow: /Secured/
+Allow: /
+

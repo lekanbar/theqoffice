@@ -1,0 +1,224 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TQO - Welcome</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />    
+	<script type="text/javascript" 
+	src='<%= TQO_Classes.Utility.DomainList.ImageServer() + "/Scripts/jquery-1.4.2.min.js" %>'></script>    
+	<script type="text/javascript" 
+	src='<%= TQO_Classes.Utility.DomainList.ImageServer() + "/Scripts/jquery.watermark.min.js" %>'></script>
+    <link href="images/favicon.png" type="images/png" rel="shortcut icon" />
+	
+    <meta name="description" content="This is a website building engine made for small and medium scale businesses" />
+	<meta name="author" content="Electronic Phase Information Systems" />
+	<meta name="keywords" content="Website building, Bulk SMS integration, Cheap website in nigeria, Picture gallery, Product gallery, Video gallery, Templates, Free, Free mobile site" />
+	<meta name="email" content="support@theqoffice.com" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" autocomplete="off" >
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    
+    <asp:UpdateProgress ID="UpdateProgressGeneral" runat="server">
+    <ProgressTemplate>
+    <div class="back"></div>
+    <div class="loading">
+    currently processing
+    <br />
+    <asp:Image ID="imgLoad" runat="server" ImageUrl="images/loading.gif" />
+    </div>
+    </ProgressTemplate>
+    </asp:UpdateProgress>
+    
+    
+    <div class="SiteBg">
+    <div id="Container">
+    
+    <div id="Header">
+    <span style="margin-left:30px; color:Maroon; font-size:12px;">
+    NB: WE ARE SORRY SOME PARTS OF THIS WEBSITE ARE UNDER MAINTENANCE, PLEASE BEAR WITH US.
+    </span>
+        <asp:HyperLink ID="Logo" runat="server" ImageUrl="images/logo.png" CssClass="Logo" 
+        NavigateUrl="~/Default.aspx"></asp:HyperLink>   
+        <asp:UpdatePanel ID="UpdatePanelLogin" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                
+                <asp:MultiView ID="MultiView1" runat="server" >
+                <asp:View ID="View1" runat="server" >
+                    <div class="Login">
+                    <span style="font-size:15px;">
+                    DO YOU HAVE AN ACCOUNT WITH US?
+                    </span>
+                    <div style="background-color:#ebebeb;    padding-top:10px;">
+                    <table>
+                    <tr>
+                    <td class="LoginTd">
+                         <asp:TextBox ID="txtEmail" runat="server" Width="150px" ></asp:TextBox>
+                     </td>  <td>    
+                     <asp:RequiredFieldValidator ID="req1" runat="server"                      
+                        ErrorMessage="*" ControlToValidate="txtEmail"  ForeColor="Black"
+                         ValidationGroup="grpLogin"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="LoginTd">
+                        <asp:TextBox ID="txtPassword" runat="server"  Width="150px"  TextMode="Password"></asp:TextBox>
+                          </td>  <td>  
+                        <asp:RequiredFieldValidator ID="req2" runat="server" 
+                        ErrorMessage="*" ControlToValidate="txtPassword"  ForeColor="Black"
+                         ValidationGroup="grpLogin"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="LoginTd">
+                       <asp:ImageButton ID="btnLogin" runat="server" ImageUrl="images/btnLogin.jpg" 
+                            onclick="btnLogin_Click" ValidationGroup="grpLogin" />
+                    </td>
+                    </tr>
+                    </table>
+                    <br />
+                    </div>
+                    </div>
+                    
+                </asp:View>
+                <asp:View ID="View2" runat="server">
+                    <div class="LoggedIn">
+                    Welcome, <asp:Label ID="lblUsername" runat="server" ForeColor="#066aff" Text="First Name" ></asp:Label>
+                    <sup>
+                    <asp:LinkButton ID="btnAccount" runat="server" Text="VIEW ACCOUNT" OnClick="btnAccount_Click"></asp:LinkButton>
+                    <span style="font-size:15px"> | </span>    
+                    <asp:LinkButton ID="btnLogout" runat="server" Text="LOGOUT" 
+                            onclick="btnLogout_Click" ></asp:LinkButton>
+                  
+                    </sup>
+                    </div> 
+                </asp:View>
+                </asp:MultiView>
+                    
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <div id="Custom">
+    <span style="color:White;">click here .. </span>
+        <asp:HyperLink ID="linkCustom" runat="server" NavigateUrl="customregistration.aspx"  ForeColor="#ffcc00">
+            for a custom-designed website!
+        </asp:HyperLink>
+    </div>
+    <div id="ContentBg">
+    <div id="Content">
+    <asp:Image ID="ImageBanner" runat="server" ImageUrl="images/catchPhrase.png" AlternateText="Get a Q-Office Website"
+     ImageAlign="Left" />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    <div style="background-color:White;">
+    <div id="Footer">
+    
+    copyright  <%= DateTime.Now.Year.ToString() %>,    
+    <asp:HyperLink ID="linkEphase" runat="server" NavigateUrl="http://ephasesolutions.com">
+    electronic phase information systems
+    </asp:HyperLink>
+    
+    </div>
+	
+	<center>
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="privacy.aspx">
+    privacy policy
+    </asp:HyperLink>
+    &nbsp; || &nbsp;
+    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="terms.aspx">
+    terms and conditions
+    </asp:HyperLink>
+    </center> 
+    <br /><br />
+     <br /> 
+    </div>
+    </div>
+    
+    
+    </div>
+    
+    <asp:UpdatePanel ID="UpdatePanelCaptcha" runat="server">
+    <ContentTemplate>
+        <asp:Panel ID="pnlCaptcha" runat="server" Visible="false" >
+        <div class="back">    
+        </div>
+            <div class="popup">
+                <table>
+                <tr>
+                <td colspan="2">
+                <asp:Label ID="lblCaptcha" runat="server" Text="...JUST CHECKING THAT YOU'RE HUMAN"></asp:Label>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <asp:UpdatePanel ID="UpdatePanelCaptchaImage" runat="server" >
+                        <ContentTemplate>
+                            <asp:Image ID="imgCaptcha" runat="server" alt="captcha image" />
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                 </td>
+                <td align="right">
+                    <asp:TextBox ID="txtCaptcha" runat="server" Height="24px" Width="200px" Font-Size="21px"
+                      ForeColor="CadetBlue" MaxLength="5"  onfocus="javascript:this.value=''"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqCaptcha" runat="server" ErrorMessage="*" Display="Dynamic"
+                     ControlToValidate="txtCaptcha" ValidationGroup="grpCaptcha" ></asp:RequiredFieldValidator>
+                </td>
+                </tr>
+                <tr>
+                <td></td>
+                <td align="right">
+                    <asp:ImageButton ID="btnCaptcha" runat="server" ImageUrl="images/btnCaptcha.png"  ValidationGroup="grpCaptcha"
+                     OnClick="btnCaptcha_Click" BackColor="#FF6600" />
+                </td>
+                </tr>
+                <tr>
+                <td colspan="2"></td>
+                </tr>
+                <tr>
+                <td colspan="2" align="center">
+                    Having login problems?
+                    <br /> Try passsword recovery 
+                    <asp:HyperLink  ID="lnkRecovery" runat="server" NavigateUrl="~/login.aspx" Text="here"
+                     ForeColor="Orange"></asp:HyperLink>
+                </td>
+                </tr>
+                </table>        
+            </div>
+        </asp:Panel>
+    
+    </ContentTemplate>
+    </asp:UpdatePanel>
+    
+    <TQO:ResultNotification ID="Notification" runat="server"  />
+    </form>
+    
+    <script type="text/javascript">
+	$(document).ready( function() {
+		$("#<%= txtEmail.ClientID %>").watermark("email address");
+		$("#<%= txtPassword.ClientID %>").watermark("password");
+	});
+	</script>
+	
+	<div id="pnlFB" style="position:fixed; width:100%; height:30px; bottom:0; left:0; 
+	 border-top:solid 1px #555555;  background-color:White;"  >
+	    
+	    
+	    <div style="background-color:#eeeeee; padding:5px;">
+	    
+	    <div class="right">
+	    <!-- BEGIN Comm100 Live Chat Button Code --><link href="http://chatserver.comm100.com/css/comm100_livechatbutton.css" rel="stylesheet" type="text/css"/><div id="comm100_ChatButton"><div id="comm100_warp"><center><div id="comm100_dvhelp"><a class="comm100_ahelp_css" href="http://www.comm100.com/livechat/" onclick="comm100_Chat();return false;" target="_blank" title="Live Chat Software for Website"><img id="comm100_ButtonImage" src="http://chatserver.comm100.com/BBS.aspx?siteId=54360&amp;planId=1587&amp;partnerId=-1" style="border:0px" alt="Live Chat Software for Website" /></a><script src="http://chatserver.comm100.com/js/LiveChat.js?siteId=54360&amp;planId=1587&amp;partnerId=-1" type="text/javascript"></script><div id="comm100_track"><a href="http://www.comm100.com/livechat/" target="_blank"><b>Live Support</b></a> by <a style="color:#009999;cursor:pointer;" onclick="javascript:document.getElementById('comm100_dvbox').style.display='';">Comm100</a></div></div><div id="comm100_dvbox" class="comm100_dvbox_css" style="display:none;" onmouseover="this.style.display=''" onmouseout="this.style.display='none'"><div class="comm100_dvcontent_css"><p class="comm100_ptitle_css"><b><a href="http://www.comm100.com/" target="_blank" class="comm100_atitle_css" >Comm100</a> Products:</b></p><ul class="comm100_ulbox_css"><li style="display:none;" class="comm100_onelinone">&nbsp;</li><li><a href="http://www.comm100.com/" target="_blank">Customer Service</a> Software</li><li><a href="http://www.comm100.com/livechat/" target="_blank" >Live Chat Software</a></li><li><a href="http://www.comm100.com/knowledgebase/" target="_blank" >Knowledge Base Software</a></li><li><a href="http://www.comm100.com/forum/" target="_blank">Forum Software</a></li><li><a href="http://www.comm100.com/emailmarketingnewsletter/" target="_blank">Email Marketing Software</a></li><li><a href="http://www.comm100.com/emailticket/" target="_blank">Email Management</a> Software</li></ul></div></div></center></div></div><!-- End Comm100 Live Chat Button Code -->
+	    
+	    </div>	    
+	        <script src="http://connect.facebook.net/en_US/all.js#xfbml=1">
+	        </script><fb:like href="theqoffice.com" show_faces="true" width="1000" action="recommend" font="arial"></fb:like>
+	    </div>
+	    
+	</div>
+	
+</body>
+</html>

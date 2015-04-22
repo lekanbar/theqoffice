@@ -1,0 +1,98 @@
+2009-08-25T11:56:53 - Log Started
+2009-08-25T11:56:53 - Info - Loaded 14044 devices using 9090 strings in 843ms
+2009-08-25T11:56:53 - Debug - Handler '؟' loaded with 19 devices.
+2009-08-25T11:56:53 - Debug - Handler 'أ' loaded with 137 devices.
+2009-08-25T11:56:53 - Debug - Handler 'و' loaded with 1349 devices.
+2009-08-25T11:56:53 - Debug - Handler '٨' loaded with 727 devices.
+2009-08-25T11:56:53 - Debug - Handler '٩' loaded with 1129 devices.
+2009-08-25T11:56:53 - Debug - Handler '٪' loaded with 253 devices.
+2009-08-25T11:56:53 - Debug - Handler '٫' loaded with 377 devices.
+2009-08-25T11:56:53 - Debug - Handler '٬' loaded with 253 devices.
+2009-08-25T11:56:53 - Debug - Handler '٭' loaded with 863 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٮ' loaded with 85 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٯ' loaded with 92 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٰ' loaded with 14 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٱ' loaded with 39 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٲ' loaded with 112 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٳ' loaded with 821 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٵ' loaded with 127 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٶ' loaded with 80 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٷ' loaded with 96 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٸ' loaded with 106 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٹ' loaded with 37 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٺ' loaded with 77 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٻ' loaded with 100 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ټ' loaded with 6 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٽ' loaded with 6 devices.
+2009-08-25T11:56:53 - Debug - Handler 'پ' loaded with 153 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ٿ' loaded with 82 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڀ' loaded with 429 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ځ' loaded with 253 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڂ' loaded with 141 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڃ' loaded with 286 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڄ' loaded with 20 devices.
+2009-08-25T11:56:53 - Debug - Handler 'څ' loaded with 508 devices.
+2009-08-25T11:56:53 - Debug - Handler 'چ' loaded with 1857 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڈ' loaded with 391 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ډ' loaded with 202 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڊ' loaded with 643 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڍ' loaded with 741 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڎ' loaded with 946 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڏ' loaded with 455 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڐ' loaded with 17 devices.
+2009-08-25T11:56:53 - Debug - Handler 'ڑ' loaded with 2 devices.
+2009-08-25T11:56:53 - Debug - Starting thread 'SG1'
+2009-08-25T11:56:53 - Debug - Starting thread 'SG2'
+2009-08-25T11:56:53 - Debug - Thread 'SG2' servicing '1368'
+2009-08-25T11:56:53 - Debug - Thread 'SG1' servicing '1368'
+2009-08-25T11:56:53 - Debug - Matched UserAgent 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)' to 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648)' and device id 'msie60_nt52_netclr3004506648' in 156.2501ms
+2009-08-25T11:58:27 - Debug - Matched UserAgent 'OPWV-SDK UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO' to 'OPWV-SDK UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO' and device id 'opwv_sdk_ver1_sub7023119' in 0.0001ms
+2009-08-25T11:58:27 - Debug - Setting 'supportedImageFormats' to 'System.Drawing.Imaging.ImageFormat[]'
+2009-08-25T11:58:27 - Debug - Setting 'requiresSpecialViewStateEncoding' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'requiresUniqueFilePathSuffix' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'requiresUniqueHtmlCheckboxNames' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'requiresUniqueHtmlInputNames' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'requiresUrlEncodedPostfieldValues' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'requiresOutputOptimization' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'requiresControlStateInSession' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'isMobileDevice' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'mobileDeviceModel' to 'OPWV-SDK/7.0.2.3'
+2009-08-25T11:58:27 - Debug - Setting 'mobileDeviceManufacturer' to 'Openwave'
+2009-08-25T11:58:27 - Debug - Setting 'type' to 'Openwave'
+2009-08-25T11:58:27 - Debug - Setting 'supportsAccessKeyAttribute' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'hasBackButton' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'screenPixelsHeight' to '128'
+2009-08-25T11:58:27 - Debug - Setting 'screenPixelsWidth' to '113'
+2009-08-25T11:58:27 - Debug - Setting 'screenBitDepth' to '24'
+2009-08-25T11:58:27 - Debug - Setting 'preferredImageMime' to 'image/png'
+2009-08-25T11:58:27 - Debug - Setting 'isColor' to 'True'
+2009-08-25T11:58:27 - Debug - Setting 'supportsPointingDevice' to 'False'
+2009-08-25T11:58:27 - Debug - Setting 'pointingMethod' to 'unknown'
+2009-08-25T11:58:27 - Debug - Setting 'majorversion' to '7'
+2009-08-25T11:58:27 - Debug - Setting 'minorversion' to '.0'
+2009-08-25T11:58:27 - Debug - Setting 'javascript' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'rmf' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'qcelp' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'awb' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'smf' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'wav' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'nokia_ringtone' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'aac' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'digiplug' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'sp_midi' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'compactmidi' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'mp3' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'mld' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'evrc' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'amr' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'xmf' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'mmf' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'imelody' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'midi_monophonic' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'au' to 'false'
+2009-08-25T11:58:27 - Debug - Setting 'midi_polyphonic' to 'true'
+2009-08-25T11:58:27 - Debug - Setting 'preferredRenderingType' to 'xhtml-mp'
+2009-08-25T11:58:27 - Debug - Setting 'preferredRenderingMime' to 'text/html'
+2009-08-25T11:58:27 - Debug - Setting 'supportsCss' to 'True'
+2009-08-25T11:58:27 - Debug - Setting 'tables' to 'True'
+2009-08-25T11:58:27 - Debug - Setting 'deviceID' to 'opwv_sdk_ver1_sub7023119'
